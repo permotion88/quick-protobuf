@@ -10,8 +10,12 @@ documentation = "https://docs.rs/quick-protobuf"
 repository = "https://github.com/tafia/quick-protobuf"
 
 [dependencies]
-error-chain = "0.8.1"
 byteorder = "1.0.0"
+
+[dependencies.error-chain]
+version = "0.8.1"
+default-features = false
+features = ["example_generated"]
 
 [dev-dependencies]
 lazy_static = "0.2.2"
